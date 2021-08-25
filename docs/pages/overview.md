@@ -1069,8 +1069,8 @@ end)
 print(y) -- outputs: 2
 ```
 
-Unlike Lua an anonymous function cannot be a closure, that is,
-it cannot use variables declared in upper scopes unless the top most scope.
+Unlike Lua an anonymous function cannot be a closure; that is,
+the anonymous function cannot use variables declared in upper scopes unless the funtion is declared in the top-most scope. See [Top scope closures](#top-scope-closures) below.
 {:.alert.alert-warning}
 
 ### Nested functions
@@ -1091,8 +1091,8 @@ print(f()) -- outputs: hello from g
 The function will be visible only in inner scopes.
 {:.alert.alert-info}
 
-Unlike Lua a nested function cannot be a closure, that is,
-it cannot use variables declared in upper scopes unless the top most scope.
+Unlike Lua a nested function cannot be a closure; that is,
+the nested function cannot use variables declared in upper scopes unless the funtion is declared in the top-most scope. See [Top scope closures](#top-scope-closures) below.
 {:.alert.alert-warning}
 
 ### Top scope closures
